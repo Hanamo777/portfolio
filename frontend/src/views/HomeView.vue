@@ -4,6 +4,7 @@
     <div class="button-container">
       <button @click="$router.push('/test')" class="test-button">테스트 페이지로 이동</button>
       <button @click="$router.push('/portfolio')" class="portfolio-button">포트폴리오 보기</button>
+      <a href="https://github.com/Hanamo777/Jenkins" target="_blank" class="github-button">GitHub 보기</a>
     </div>
   </div>
 </template>
@@ -34,7 +35,7 @@ export default {
   max-width: 800px;
 }
 
-.test-button, .portfolio-button {
+.test-button, .portfolio-button, .github-button {
   padding: 1.2rem 3rem;
   font-size: 1.4rem;
   color: white;
@@ -44,6 +45,8 @@ export default {
   transition: all 0.3s;
   flex: 1;
   max-width: 300px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .test-button {
@@ -60,5 +63,13 @@ export default {
 
 .portfolio-button:hover {
   background-color: #1976D2;
+}
+
+.github-button {
+  background-color: #333;
+}
+
+.github-button:hover {
+  background-color: #555;
 }
 </style> 
