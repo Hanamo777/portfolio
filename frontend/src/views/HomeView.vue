@@ -5,6 +5,7 @@
       <button @click="$router.push('/test')" class="test-button">테스트 페이지로 이동</button>
       <button @click="$router.push('/portfolio')" class="portfolio-button">포트폴리오 보기</button>
       <a href="https://github.com/Hanamo777/Jenkins" target="_blank" class="github-button">GitHub 보기</a>
+      <a href="https://blog.naver.com/hanamo7777777" target="_blank" class="blog-button">블로그 보기</a>
     </div>
   </div>
 </template>
@@ -32,10 +33,11 @@ export default {
   justify-content: center;
   margin-top: 2rem;
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
+  flex-wrap: wrap;
 }
 
-.test-button, .portfolio-button, .github-button {
+.test-button, .portfolio-button, .github-button, .blog-button {
   padding: 1.2rem 3rem;
   font-size: 1.4rem;
   color: white;
@@ -71,5 +73,13 @@ export default {
 
 .github-button:hover {
   background-color: #555;
+}
+
+.blog-button {
+  background-color: #03C75A;
+}
+
+.blog-button:hover {
+  background-color: #02b351;
 }
 </style> 
