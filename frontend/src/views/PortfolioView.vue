@@ -58,9 +58,8 @@ export default {
 
 .image-container {
   flex: 1;
-  margin: 1rem auto;
-  width: 100%;
-  max-width: 95vw;
+  margin: 1rem;
+  width: calc(100% - 2rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +67,7 @@ export default {
 
 .slide-image {
   max-width: 100%;
-  max-height: 80vh;
+  max-height: calc(100vh - 150px);
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
