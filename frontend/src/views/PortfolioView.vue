@@ -76,7 +76,7 @@ h1 {
 
 .slide-image {
   max-width: 100%;
-  max-height: calc(100vh - 180px);
+  max-height: calc(100vh - 120px);
   width: auto;
   height: auto;
   object-fit: contain;
@@ -88,15 +88,14 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  margin: 0;
 }
 
 .nav-button {
-  padding: 0.6rem 1.5rem;
-  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -115,21 +114,20 @@ h1 {
 }
 
 .slide-number {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
 .home-button {
-  padding: 0.8rem 2rem;
-  font-size: 1.1rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
   background-color: #2196F3;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin: 0.5rem 0;
 }
 
 .home-button:hover {
