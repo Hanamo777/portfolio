@@ -17,24 +17,33 @@ export default {
 <style scoped>
 .home {
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-container {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 800px;
 }
 
 .test-button, .portfolio-button {
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
+  padding: 1.2rem 3rem;
+  font-size: 1.4rem;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
+  flex: 1;
+  max-width: 300px;
 }
 
 .test-button {

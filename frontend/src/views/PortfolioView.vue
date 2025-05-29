@@ -50,17 +50,26 @@ export default {
 <style scoped>
 .portfolio {
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-container {
-  margin: 2rem auto;
-  max-width: 800px;
+  flex: 1;
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 95vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide-image {
   max-width: 100%;
-  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -69,13 +78,14 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   margin: 1rem 0;
+  padding: 1rem;
 }
 
 .nav-button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
   background-color: #4CAF50;
   color: white;
   border: none;
