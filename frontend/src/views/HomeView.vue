@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>CI CD 가 잘 된다는 증거입니다. 당신을 축복합니다. 힘내세요.</h1>
+    <h1>포트폴리오를 보시려면 버튼을 누르세요.</h1>
     <div class="button-container">
       <button @click="$router.push('/test')" class="test-button">테스트 페이지로 이동</button>
       <button @click="$router.push('/portfolio')" class="portfolio-button">포트폴리오 보기</button>
