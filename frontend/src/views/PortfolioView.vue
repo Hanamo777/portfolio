@@ -49,77 +49,78 @@ export default {
 
 <style scoped>
 .portfolio {
-  text-align: center;
-  padding: 1rem;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+ text-align: center;
+ padding: 0; /* padding 제거 또는 줄임 */
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
 }
 
 .image-container {
-  flex: 1;
-  margin: 1rem;
-  width: calc(100% - 2rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ flex-grow: 1; /* 남는 공간을 모두 차지하도록 flex-grow 적용 */
+ margin: 0; /* margin 제거 */
+ width: 100%; /* width 100%로 설정 */
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 .slide-image {
-  max-width: 100%;
-  max-height: calc(100vh - 150px);
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ max-width: 90%; /* 이미지 최대 너비 조정 */
+ max-height: 90vh; /* 이미지 최대 높이 조정 */
+ object-fit: contain;
+ border-radius: 8px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin: 1rem 0;
-  padding: 1rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 2rem;
+ padding: 1rem;
+ margin-bottom: 1rem; /* controls 영역 하단 margin 추가 */
 }
 
 .nav-button {
-  padding: 0.8rem 2rem;
-  font-size: 1.2rem;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+ padding: 0.8rem 2rem;
+ font-size: 1.2rem;
+ background-color: #4CAF50;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ transition: background-color 0.3s;
 }
 
 .nav-button:disabled {
-  background-color: #cccccc;
-  cursor: not-allowed;
+ background-color: #cccccc;
+ cursor: not-allowed;
 }
 
 .nav-button:not(:disabled):hover {
-  background-color: #45a049;
+ background-color: #45a049;
 }
 
 .slide-number {
-  font-size: 1.2rem;
-  font-weight: bold;
+ font-size: 1.2rem;
+ font-weight: bold;
 }
 
 .home-button {
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  background-color: #2196F3;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: 1rem;
+ padding: 1rem 2rem;
+ font-size: 1.2rem;
+ background-color: #2196F3;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+ margin-top: 1rem;
+ margin-bottom: 2rem; /* home-button 하단 margin 추가 */
 }
 
 .home-button:hover {
-  background-color: #1976D2;
+ background-color: #1976D2;
 }
-</style> 
+</style>
